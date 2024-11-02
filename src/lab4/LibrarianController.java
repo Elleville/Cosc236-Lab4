@@ -26,6 +26,7 @@ public class LibrarianController {
 		if (library.getAvailableBooks().contains(book) && book.getStatus()) {
 			library.borrowBook(book);  //send to library
 			member.addBook(book); //send to member
+			book.updateStatus(); //send to book
 			System.out.println(member.getName() + " has successfully borrowed " + book.getTitle());
 		} else {
 			System.out.println(book.getTitle() + " is either already borrowed or not available.");
@@ -45,6 +46,7 @@ public class LibrarianController {
 		if (member.getBooks().contains(book)) {
 			member.removeBook(book); //send to member
 			library.returnBook(book);   //send to library
+			book.updateStatus(); //send to book
 			System.out.println(member.getName() + " has successfully returned " + book.getTitle());
 		} else {
 			System.out.println(member.getName() + " didn't borrow " + book.getTitle());

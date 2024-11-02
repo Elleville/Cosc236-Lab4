@@ -62,14 +62,12 @@ public class Library {
 
 	public void borrowBook(Book b){
 		int indexOfBook = availableBooks.indexOf(b);
-		availableBooks.get(indexOfBook).updateStatus();
 		System.out.println(b.getTitle() + " has been borrowed");
 	
 	}
 	
 	public void returnBook(Book b) {
 		int indexOfBook = availableBooks.indexOf(b);
-		availableBooks.get(indexOfBook).updateStatus();
 		System.out.println(b.getTitle() + " has been returned");
 	
 	}
