@@ -93,7 +93,7 @@ public class Library {
 			System.out.println("Member " + memberName + " has been added.");
 		} else {
 			System.out.println("Member " + memberName + " already exists.");
-     	}
+     		}
  	}
  	
  	public ArrayList<Member> getMembers() {
