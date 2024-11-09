@@ -14,7 +14,7 @@ public class Book {
 		this.isAvailable = true;
 	}
 	
-	// TODO: implement Book functionality
+	// DONE: implement Book functionality
 	public void updateStatus(){
 		if(isAvailable){
 			isAvailable = false;

@@ -11,7 +11,7 @@ public class Member {
 	// private borrowedbBooks DONE: implement collection of borrowed books
 	private ArrayList<Book> borrowedBooks;
 	
-	// TODO: implement functionality of Member class
+	// DONE: implement functionality of Member class
 
 	public Member(int id, String name){
 		this.id = id;
